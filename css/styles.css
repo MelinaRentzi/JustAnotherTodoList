@@ -1,7 +1,17 @@
 /* styles.css */
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
 body {
-    background: #eee;
+    /*Photo by rawpixel on Unsplash*/
+    background-image: url("../img/rawpixel-579264-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -18,6 +28,10 @@ body {
     display: table;
     content: "";
     clear: both;
+}
+
+.container h1 {
+    color: rgb(24, 19, 16);
 }
 
 ul {
@@ -59,6 +73,7 @@ ul li:active {
 #todoListWrapper {
     width: 960px;
     text-align: center;
+    background: rgb(243, 244, 246);
 }
 
 #todoList:after {
@@ -88,8 +103,8 @@ ul li:active {
 }
 
 #todoList li.listTitle {
-    background: #444;
-    color: white;
+    background: rgba(207, 164, 129, 1);
+    color: rgb(24, 19, 16);
     padding: 10px;
     text-align: center;
     border-right: solid 1px white;
@@ -103,8 +118,8 @@ ul li:active {
 }
 
 #todoList .emptySpace {
-    background: #fc3;
-    border: dashed 1px #777;
+    background: rgba(207, 164, 129, 0.3);
+    border: dashed 1px rgb(24, 19, 16);
     height: 10px;
 }
 
@@ -129,11 +144,16 @@ ul li:active {
 }
 
 #trash {
-    background: rgba(178, 73, 38, 0.7);
-    color: white;
+    background: rgba(77, 71, 47, 0);
+    color: rgb(243, 244, 246);
+    position: absolute;
+    top: 260px;
+    left: 900px;
     height: 200px;
-    width: 400px;
-    margin: 50px auto 0;
+    width: 200px;
+    margin: 500px auto 0;
     line-height: 200px;
     text-align: center;
+    font-size: 100px;
+
 }
